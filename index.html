@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us.
+        </p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ex.: Renato Ramos de Lima Santos"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ex.: rramosdls.developer@gmail.com"
+            required
+          />
+          <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="100"
+            placeholder="Ex.: 18"
+            required
+          />
+          <!--If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+
+          <label for="country">Country</label>
+
+          <select id="dropdown">
+            <option>Brazil</option>
+            <option>USA</option>
+          </select>
+
+          <label>Sex</label>
+          <div class="radio">
+            <input type="radio" name="sex" value="male" /> Male<br />
+            <input type="radio" name="sex" value="female" /> Female<br />
+          </div>
+
+          <label>Programming Language</label>
+          <div class="checkbox">
+            <div>
+              <input type="checkbox" name="Python" value="Python" />
+              <label for="Python">Python</label>
+            </div>
+            <div>
+              <input type="checkbox" name="JavaScript" value="JavaScript" />
+              <label for="JavaScript">JavaScript</label>
+            </div>
+            <div>
+              <input type="checkbox" name="C++" value="C++" />
+              <label for="C++">C++</label>
+            </div>
+            <div>
+              <input type="checkbox" name="C#" value="C#" />
+              <label for="C#">C#</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Java" value="Java" />
+              <label for="Java">Java</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Dart" value="Dart" />
+              <label for="Dart">Dart</label>
+            </div>
+          </div>
+
+          <label>Any comments ?</label>
+
+          <textarea
+            name=""
+            id=""
+            placeholder="Enter your comment here..."
+          ></textarea>
+
+          <button id="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+:root {
+  --display-form: center;
+  --width: 500px;
+  --margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: var(--display-form);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  margin: 0px 100px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --display-form: stretch;
+    --width: 100%;
+    --margin: none;
+  }
+}
+
+main #survey-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: var(--margin);
+  box-shadow: 0px 0px 4px rgb(172, 172, 172);
+}
+
+#survey-form input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: var(--width);
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#survey-form button {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#survey-form input[type="submit"]:hover {
+  background-color: rgb(252, 148, 129);
+}
+
+.radio {
+  margin: 8px 0px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 8px 0px;
+}
+
+textarea {
+  resize: none;
+}
